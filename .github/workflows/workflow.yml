@@ -11,7 +11,7 @@ jobs:
 
     startegy:
       matrix:
-        node-version: [v20.2.0]
+        node-version: [15.x]
 
     steps:
       - uses: actions/checkout@v1
