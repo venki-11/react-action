@@ -14,8 +14,8 @@ jobs:
         node-version: [v20.2.0]
 
     steps:
-      -uses: actions/checkout@v1
-      -run: npm install
-      -run: npm run build
-      -run: npm test
-      
+      - uses: actions/checkout@v1
+      - run: npm install
+      - run: npm run build
+      - run: npm test
+
