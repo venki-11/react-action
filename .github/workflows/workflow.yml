@@ -1,0 +1,21 @@
+name: react CI
+
+on:
+  push:
+    branches:
+      -"main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    startegy:
+      matrix:
+        node-version: [v20.2.0]
+
+    steps:
+      -uses: actions/checkout@v1
+      -run: npm install
+      -run: npm run build
+      -run: npm test
+      
