@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h1>github actions testing</h1>
+          <h1>github actions testing with manual trigger</h1>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
