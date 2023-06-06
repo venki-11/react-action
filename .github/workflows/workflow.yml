@@ -1,5 +1,8 @@
 name: react CI
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       commit_sha:
