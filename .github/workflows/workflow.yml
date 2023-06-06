@@ -1,10 +1,10 @@
 name: react CI
-
 on:
-  push:
-    branches:
-      - "main"
-
+  workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: 'SHA of the commit to deploy'
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
